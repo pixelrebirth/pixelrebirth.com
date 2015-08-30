@@ -1,0 +1,9 @@
+#content {
+  padding-top: 0;
+}
+body.hashAncor #content {
+  padding-top: 0;
+}
+.select-menu {
+  display: none !important;
+}
