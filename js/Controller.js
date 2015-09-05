@@ -5,7 +5,7 @@ function RestController ($scope, $http) {
 	    // $http.post('http://web.pixelrebirth.com:8880/api',"module=posh&codeset=dirtree&arg1=c:\\sherri").
 	    $http.post('/sample.json').
 	    success(function(data) {
-	        $scope.markers.colorarray = data;
+	        $scope.markers = data;
 	    }, function(dataError){
 	    	$scope.test = dataError
 	    });

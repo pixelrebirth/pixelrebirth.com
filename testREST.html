@@ -13,8 +13,8 @@
       <h4>{{ test }}</h4>
 	    <hr/>
       <button ng-click="loadJson()">LoadContent</button>
-	    <div class="col-md-6">
-	      <p>{{ markers.colorname }}</p>
+	    <div ng-repeat="pen in markers.colorsArray" class="col-md-6">
+	      <p>{{ pen.colorName }}</p>
 	    </div>
 	  </div>
   	</div>
