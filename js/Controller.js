@@ -6,7 +6,16 @@ function RestController ($scope, $http) {
 	    success(function(data) {
 	        $scope.markers = data;
 	    }, function(dataError){
-	    	$scope.test = dataError
+	    	$scope.err = dataError;
 	    });
-	}
+	};
+    $scope.getToken = function () {
+    	var inputBody = 'username=' + $scope.username + '&password=' + $scope.password
+	    $http.post('http://web.pixelrebirth.com:8880/auth', inputBody).
+	    success(function(data) {
+	        $scope.token = data;
+	    }, function(dataError){
+	    	$scope.err = dataError;
+	    });
+	};
 };

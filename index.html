@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/touchTouch.css">
   <link rel="stylesheet" href="css/contact-form.css">
   <link rel="stylesheet" href="css/style.css">
+  <style>[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {display: none !important;}</style>
   <script src="js/jquery.js"></script>
   <script src="js/jquery-migrate-1.2.1.js"></script>
   <script src="js/jquery.equalheights.js"></script>
@@ -65,21 +66,21 @@
         <a href="index.html">
           <span class="first">Kelcey</span>
           <span class="second">Vehanen</span>
-          <span class="third">pixelrebirth.com</span>
+          <span class="third">Technologist</span>
         </a>
       </h1>
       <nav>
-        <ul class="sf-menu">
+        <ul class="sf-menu"  ng-cloak>
           <li><a ng-click="SetShowToFalse(); argaliMenu = true">Argali <i class="fa fa-info-circle"></i></a></li>
                   <li ng-show="argaliMenu"><a href="#">> What is Argali?</a></li>
                   <li ng-show="argaliMenu"><a href="#">> Architecture</a></li>
                   <li ng-show="argaliMenu"><a ng-click="argaliDemoMenu = true">> Demos</a></li>
                       <li ng-show="argaliDemoMenu"><a href="#">--> Windows</a></li>
-                      <li ng-show="argaliDemoMenu"><a href="#">--> DSC</a></li>
                       <li ng-show="argaliDemoMenu"><a href="#">--> Linux</a></li>
                       <li ng-show="argaliDemoMenu"><a href="#">--> Unix</a></li>
                       <li ng-show="argaliDemoMenu"><a href="#">--> VMware</a></li>
                       <li ng-show="argaliDemoMenu"><a href="#">--> REST</a></li>
+                      <li ng-show="argaliDemoMenu"><a href="#">--> All in One</a></li>
                   <li ng-show="argaliMenu"><a href="#">> Documentation</a></li>
                   <li ng-show="argaliMenu"><a href="#">> FAQ</a></li>
           <li><a ng-click="SetShowToFalse(); photoMenu = true">Photography <i class="fa fa-camera-retro"></i></a></li>
@@ -126,35 +127,35 @@
 
   <div id="home" class="hashAncor" style="height: 125px; margin-top: -125px; z-index: -1; position: relative;"></div>
   <div class="wrapper1">
-    <div class="container">
+    <div class="container"  ng-cloak>
       <div class="row">
         <div class="grid_10  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-          <h2>hI! i AM fRANK rOSSO.</h2>
-          <p class="p1 mar_t_2">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl. Mauris accumsan nulla vel diam.</p>
+          <h2>Thank you for viewing...</h2>
+          <p class="p1 mar_t_2">This site is dedicated to sharing what I do and love. I hope you can find something of use to you.<br>Everything here is open source and drm free, please take what you want.</p>
         </div>
       </div>
       <ul class="row mar_t_1">
         <li class="grid_5 mar_t_2 tac  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
         <img class="pic" src="images/p1_pic1.jpg" alt=""/>
-        <p class="p2">Fashion</p>
-        <a href="#" class="btn-default">VIEW MORE</a>
+        <p class="p2">Technologist</p>
+        <a href="#technologist" class="btn-default">VIEW MORE</a>
         </li>
         <li class="grid_5 mar_t_2 tac wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
         <img class="pic" src="images/p1_pic2.jpg" alt=""/>
-        <p class="p2">Nature</p>
-        <a href="#" class="btn-default">VIEW MORE</a>
+        <p class="p2">Artist</p>
+        <a href="#artist" class="btn-default">VIEW MORE</a>
         </li>
       </ul>
-            <ul class="row">
+      <ul class="row">
         <li class="grid_5 mar_t_2 tac wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
         <img class="pic" src="images/p1_pic3.jpg" alt=""/>
-        <p class="p2">People</p>
-        <a href="#" class="btn-default">VIEW MORE</a>
+        <p class="p2">Gamer</p>
+        <a href="#gamer" class="btn-default">VIEW MORE</a>
         </li>
         <li class="grid_5 mar_t_2 tac wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
         <img class="pic" src="images/p1_pic4.jpg" alt=""/>
-        <p class="p2">Food</p>
-        <a href="#" class="btn-default">VIEW MORE</a>
+        <p class="p2">Writer</p>
+        <a href="#writer" class="btn-default">VIEW MORE</a>
         </li>
       </ul>
     </div>
@@ -164,7 +165,7 @@
      <div class="container">
         <div class="row">
           <div class="grid_10 tac  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-            <h3><span>about me</span></h3>
+            <h3><span>About Me</span></h3>
           </div>
         </div>
           
@@ -174,9 +175,13 @@
           </div>
           <div class="grid_5 mar_t_2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
             
-            <a href="#" class="a1">Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl.</a>
+            <a href="#aboutme" class="a1">There are five major parts to this Kelcey.</a>
             <p class="mar_t_3">
-              Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim, pulvinar ac, lorem. Vestibulum sed ante. Donec sagittis euismod purus. Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus.
+              <ul>FATHER: My family is the reason I do anything at all.</ul>
+              <ul>HOCKEY FAN: Go Avs! Go Gulls! Is the game on? Is there an article to read?</ul>
+              <ul>GAMER: Pen and paper, card games, board games, video games; it is a critcally needed escape...</ul>
+              <ul>TECHNOLOGY GEEK: I love logic, I love gadgets, I love learning... these are all you need to be thrive in modern technology.</ul>
+              <ul>HOBBIEST: I collect hobbies. In no order: photography, digital art, astronomy, physics, software development, web development, electronics, reading, writing and playing hockey.</ul>
             </p>
           </div>   
         </div> 
@@ -188,8 +193,8 @@
         <div class="row">
           <div class="grid_3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s"> 
             <h4 class="">biography</h4>
-            <a href="#"  class="a1 mar_t_1">Fusce euismod consequat ante.</a>
-            <p class="">Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis. In pede mi, aliquet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis, lobortis dignissim,</p>
+            <a href="#"  class="a1 mar_t_1">I was born in San Diego, Ca.</a>
+            <p class="">I was raised to be kind hearted, respectful, understanding, and like my dad before me, a technologist. I am grateful to my parents for all they have done; I am forever challenged to succeed by my beautiful wife and four delightful children. This site is a tribute to thank all of you for making all of this possible.</p>
           </div>
 
           <div class="grid_4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
@@ -202,11 +207,12 @@
           <div class="grid_3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
             <h4 class=''>services</h4>
                <ul class='list_1 mar_t_05'>
-                <li class=''><a href="#">Vestibulum iaculis</a></li>
-                <li class=''><a href="#">Lacinia est</a></li>
-                <li class=''><a href="#">Proin dictum</a></li>
-                <li class=''><a href="#">Elementum velit</a></li>
-                <li class=''><a href="#">Consequat ante</a></li>
+                <li class=''><a href="#">Powershell Automation</a></li>
+                <li class=''><a href="#">Responsive Web Design</a></li>
+                <li class=''><a href="#">IT Operations</a></li>
+                <li class=''><a href="#">Still Photography</a></li>
+                <li class=''><a href="#">Abstract Posters</a></li>
+                <li class=''><a href="#">Book Sales</a></li>
               </ul>
           </div>
         </div> 
@@ -291,7 +297,7 @@
                   </label>
 
                   <label class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <input type="text" name="Test" placeholder="Test:" value=""
+                    <input type="text" name="Test" placeholder="Test:" ng-pattern="/w+/./w+"/>
                     <span class="empty-message">*This field is required.</span>
                     <span class="error-message">*This is not a valid email.</span>
                   </label>
@@ -343,7 +349,7 @@
           <div class="grid_5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s"> 
             <h4 class="">Blank Spacer</h4>
             <a href="#"  class="a1 mar_t_1">This is just until I can build some content.</a>
-            <p class="">Start<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>End<br><br><br></p>
+            <p class="">Start<br>Technology Geek: This site is telltale to what I am in technology, well rounded. I wrote the webserver itself, host the services in my home, run a Vmware cluster with shared storage, automate the maintenance.. I wrote the reponsive front end in html5/css3/angularJS... I have done it all end to end-- web development, software development, architectural design, windows/linux operations, devops, and network engineering to make this page possible.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>End<br><br><br></p>
           </div>
         </div> 
       </div>          

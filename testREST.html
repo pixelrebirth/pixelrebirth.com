@@ -4,12 +4,21 @@
     <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
     <link href="css/main.css" rel="stylesheet" />
+    <link href="css/signin.css" rel="stylesheet" />
     <script src="js/angular.min.js"></script>
     <script src="js/Controller.js"></script>
   </head>
   <body ng-app="app">
   	<div class="main" ng-controller="Controller" class="container">
-	    <h1>Events</h1>
+      
+<form name="authForm" ng-submit="getToken()">
+    <input type="text" ng-model="username" ng-required="true">
+    <input type="password" ng-model="password" ng-required="true"> 
+    <input type="submit" class="btn"><br>
+    <span ng-bind="token"></span>
+ </form>
+      <h1>Events</h1>
+      <h4>{{err}}</h4>
       <label class="col-sm-2 control-label">Folder Contents</label><br>
           <div ng-repeat="pen in markers.value">
             <br>
