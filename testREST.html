@@ -10,23 +10,20 @@
   </head>
   <body ng-app="app">
   	<div class="main" ng-controller="Controller" class="container">
-      
-<form name="authForm" ng-submit="getToken()">
-    <input type="text" ng-model="username" ng-required="true">
-    <input type="password" ng-model="password" ng-required="true"> 
-    <input type="submit" class="btn"><br>
-    <span ng-bind="token"></span>
- </form>
-      <h1>Events</h1>
-      <h4>{{err}}</h4>
-      <label class="col-sm-2 control-label">Folder Contents</label><br>
-          <div ng-repeat="pen in markers.value">
-            <br>
-            Name: {{ pen.Name }} <br>
-            Mode: {{ pen.Mode }} <br>
-            Attributes: {{ pen.Attributes }} <br>
-            ------------
-          </div>
-      <div><button class="btn btn-primary" ng-click="loadJson()">LoadContent</button></div>
+      <h1>Windows Argali Testing</h1>
+      <h2>{{ generalMessage }}</h2>
+      <form name="authForm" ng-submit="getToken()">
+          <input type="text" ng-model="username" ng-required="true">
+          <input type="password" ng-model="password" ng-required="true"> 
+          <input type="submit" class="btn btn-primary"><br>
+       </form>
+      <div ng-show="showContent" ng-repeat="eachObject in objects.value">
+        <br>
+        Name: {{ eachObject.Name }} <br>
+        Mode: {{ eachObject.Mode }} <br>
+        Attributes: {{ eachObject.Attributes }} <br>
+        ------------
+      </div>
+      <div><button class="btn btn-success" ng-click="loadJson()">LoadContent</button></div>
   	</div>
   </body>
