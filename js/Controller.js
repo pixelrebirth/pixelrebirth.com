@@ -13,7 +13,7 @@ function RestController ($scope, $http) {
     $scope.getToken = function () {
     	$scope.clearAllData();
     	var inputBody = 'username=' + $scope.username + '&password=' + $scope.password;
-	    $http.post('http://web.pixelrebirth.com:8880/auth', inputBody)
+	    $http.post('https://web.pixelrebirth.com:8880/auth', inputBody)
 	    .success(function(data) {
 			var dateOffset = (60*1000) * 1; //1 minute
 			var dateNew = new Date();
@@ -42,7 +42,7 @@ function RestController ($scope, $http) {
     $scope.loadJson = function () {
     	$scope.checkToken();
     	if (($scope.tokenKey) != "Cannot Authenticate" && ($scope.tokenKey) != null) {
-		    $http.post('http://web.pixelrebirth.com:8880/api',"module=posh&codeset=dirtree&arg1=c:\\windows\\system32")
+		    $http.post('https://web.pixelrebirth.com:8880/api',"module=posh&codeset=dirtree&arg1=c:\\windows\\system32")
 		    .success(function(data) {
 		        $scope.objects = data;
 		    });
