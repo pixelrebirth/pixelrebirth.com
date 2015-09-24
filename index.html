@@ -32,7 +32,7 @@
     });
   </script>
   <script src="js/angular.min.js"></script>
-  <script src="js/MenuController.js"></script>
+  <script src="js/MainController.js"></script>
     <!--[if lt IE 9]>
     <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
     <![endif]-->
@@ -41,12 +41,12 @@
   <!--[if lt IE 8]>
   <div style=' clear: both; text-align:center; position: relative;'>
    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-     <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-   </a>
+     <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /
   </div>
   <![endif]-->
   <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
+>
+   </a>    <script src="js/html5shiv.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
   <![endif]-->
 </head>
@@ -61,7 +61,7 @@
 =========================================================-->
 <header id="header">
   <div id="stuck_container">
-    <div ng-controller="MenuController" class="wrapper">
+    <div ng-controller="MainController" class="wrapper">
       <h1>
         <a href="index.html">
           <span class="first">Kelcey</span>
@@ -166,22 +166,6 @@
             <h3><span>About Me</span></h3>
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="grid_5 mar_t_2  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-            <img class="" src="images/p1_pic5.jpg" alt=""/> 
-          </div>
-          <div class="grid_5 mar_t_2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-            
-            <a href="#aboutme" class="a1">There are five major parts to this Kelcey.</a>
-            <p class="mar_t_3">
-              <ul>FATHER: My family is the reason I do anything at all.</ul>
-              <ul>HOCKEY FAN: Go Avs! Go Gulls! Is the game on? Is there an article to read?</ul>
-              <ul>GAMER: Pen and paper, card games, board games, video games; it is a critcally needed escape...</ul>
-              <ul>TECHNOLOGY GEEK: I love logic, I love gadgets, I love learning... these are all you need to be thrive in modern technology.</ul>
-              <ul>HOBBIEST: I collect hobbies. In no order: photography, digital art, astronomy, physics, software development, web development, electronics, reading, writing and playing hockey.</ul>
-            </p>
-          </div>   
-        </div>  -->
      </div>           
   </div>
      <div class='wrapper3'>
@@ -213,162 +197,7 @@
           </div>
         </div> 
       </div>          
-    </div>  
-  <div id="info" class="hashAncor" style="height: 125px; margin-top: -125px; z-index: -1; position: relative;"></div>
-  <div id="works" class="hashAncor"></div>
-    <div class='wrapper3'>
-      <div class="container">
-        <div class="row">
-          <div class="grid_10 tac  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-            <h3><span>works</span></h3>
-          </div>
-        </div>
-        <div class="row gallery mar_t_15">
-          <div class="grid_5 mar_t_2">
-            <div class="gallery_image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-              <a href="images/p2_pic6_big.jpg">
-                <img src="images/p1_pic6.jpg" alt=""/>
-                <div class="gallery_icon"><i class="fa fa-search"></i></div>
-              </a>
-            </div>
-          </div>
-          <div class="grid_5 mar_t_2">
-            <div class="gallery_image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-
-              <a href="images/p2_pic7_big.jpg">
-                <img src="images/p1_pic7.jpg" alt=""/>
-                <div class="gallery_icon"><i class="fa fa-search"></i></div>
-              </a>
-              <a href="images/p2_pic8_big.jpg"></a>
-            </div>
-          </div>
-          <div class="grid_10 mar_t_2">
-            <div class="gallery_image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-              <a href="images/p2_pic8_big.jpg">
-                <img src="images/p1_pic8.jpg" alt=""/>
-                <div class="gallery_icon"><i class="fa fa-search"></i></div>
-              </a>
-            </div>
-          </div>
-          <div class="grid_4 mar_t_2">
-            <div class="gallery_image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-              <a href="images/p2_pic9_big.jpg">
-                <img src="images/p1_pic9.jpg" alt=""/>
-                <div class="gallery_icon"><i class="fa fa-search"></i></div>
-              </a>
-              <a href="images/p2_pic10_big.jpg"></a>
-            </div>
-          </div>
-          <div class="grid_2 mar_t_2">
-            <div class="gallery_image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-              <a href="images/bg_pic_right.jpg">
-                <img src="images/bg_pic_right.jpg" alt=""/>
-                <div class="gallery_icon"><i class="fa fa-search"></i></div>
-              </a>
-            </div>
-          </div>
-          <div class="grid_4 mar_t_2">
-            <div class="gallery_image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-              <a href="images/p2_pic10_big.jpg">
-                <img src="images/p1_pic10.jpg" alt=""/>
-                <div class="gallery_icon"><i class="fa fa-search"></i></div>
-              </a>
-            </div>
-          </div>
-          <div class="grid_10 mar_t_2">
-            <div class="gallery_image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-              <a href="images/p2_pic8_big.jpg">
-                <img src="images/p1_pic8.jpg" alt=""/>
-                <div class="gallery_icon"><i class="fa fa-search"></i></div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row mar_t_4">
-          <div class="grid_10 tac wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-            <a href="#" class="btn-default">VIEW MORE</a>
-          </div>
-        </div>
-      </div>
     </div>
-  <div id="contacts" class="hashAncor" style="height: 125px; margin-top: -125px; z-index: -1; position: relative;"></div>
-  <div class="wrapper4">
-    <div class="container">
-        <div class="row">
-          <div class="grid_10 tac wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-            <h3><span>contact me</span></h3>
-          </div>
-        </div>
-      <div class="row">
-        <div class="grid_10 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-          <form id="contact-form">
-            <div class="contact-form-loader"></div>
-            <fieldset>
-              <div class="row">
-                <div class="grid_3 mar_t_5">
-                  <label class="name wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-                    <input type="text" name="name" placeholder="Name:" data-constraints="@Required @JustLetters"/>
-                    <span class="empty-message">*This field is required.</span>
-                  </label>
-
-                  <label class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <input type="text" name="Test" placeholder="Test:" ng-pattern="/w+/./w+"/>
-                    <span class="empty-message">*This field is required.</span>
-                    <span class="error-message">*This is not a valid email.</span>
-                  </label>
-
-                  <label class="email wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <input type="text" name="email" placeholder="Email:" value=""
-                           data-constraints="@Required @Email"/>
-                    <span class="empty-message">*This field is required.</span>
-                    <span class="error-message">*This is not a valid email.</span>
-                  </label>
-
-                  <label class="phone wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <input type="text" name="phone" placeholder="Phone:" value=""
-                           data-constraints="@Required @JustNumbers"/>
-                    <span class="empty-message">*This field is required.</span>
-                    <span class="error-message">*This is not a valid phone.</span>
-                  </label>
-                </div>
-                <div class="grid_7 mar_t_5">
-                  <label class="message wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                    <textarea name="message" placeholder="Message:"
-                              data-constraints='@Required @Length(min=20,max=999999)'></textarea>
-                    <span class="empty-message">*This field is required.</span>
-                    <span class="error-message">*The message is too short.</span>
-                  </label>
-                </div>
-              </div>
-              <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
-
-              <div class="row">
-                <div class="grid_7 preffix_3">
-                  <div class="contact-form-buttons">
-                    <a data-type="submit" class="btn-default  wow flipInX" data-wow-delay="0.5s" data-wow-duration="1s">submit</a>
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="content">
-  <div id="home" class="hashAncor" style="height: 125px; margin-top: -125px; z-index: -1; position: relative;"></div>
-     <div class='wrapper1'>
-      <div class="container">
-        <div class="row">
-          <div class="grid_5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s"> 
-            <h4 class="">Blank Spacer</h4>
-            <a href="#"  class="a1 mar_t_1">This is just until I can build some content.</a>
-            <p class="">Start<br>Technology Geek: This site is telltale to what I am in technology, well rounded. I wrote the webserver itself, host the services in my home, run a Vmware cluster with shared storage, automate the maintenance.. I wrote the reponsive front end in html5/css3/angularJS... I have done it all end to end-- web development, software development, architectural design, windows/linux operations, devops, and network engineering to make this page possible.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>End<br><br><br></p>
-          </div>
-        </div> 
-      </div>          
-    </div> 
 </section>
       </div>
     </div>

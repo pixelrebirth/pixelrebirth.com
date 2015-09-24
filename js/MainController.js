@@ -1,5 +1,5 @@
 angular.module('app',[])
-.controller('MenuController', Main);
+.controller('MainController', Main);
 function Main ($scope) {
 	$scope.SetShowToFalse = function () {
 		$scope.argaliMenu = false
