@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/touchTouch.css">
   <link rel="stylesheet" href="css/contact-form.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/ng-modal.css" media="all" />
   <style>[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {display: none !important;}</style>
   <script src="js/jquery.js"></script>
   <script src="js/jquery-migrate-1.2.1.js"></script>
@@ -16,6 +17,7 @@
   <script src="js/touchTouch.jquery.js"></script>
   <script src="js/TMForm.js"></script>
   <script src="js/modal.js"></script>
+  <script type="text/javascript" src="js/ng-modal.js"></script>
   <!--[if (gt IE 9)|!(IE)]><!-->
   <script src="js/wow/wow.js"></script>
   <script>
@@ -52,7 +54,7 @@
 </head>
 
 
-<body class="home" ng-app="app">
+<body class="home" ng-app="app" ng-controller="MainController">
 
 <img class="bg_pic1" src="images/bg_pic_left.jpg" alt=""/>
 <img class="bg_pic2" src="images/bg_pic_right.jpg" alt=""/>
@@ -61,7 +63,7 @@
 =========================================================-->
 <header id="header">
   <div id="stuck_container">
-    <div ng-controller="MainController" class="wrapper">
+    <div class="wrapper">
       <h1>
         <a href="index.html">
           <span class="first">Kelcey</span>
@@ -199,6 +201,12 @@
       </div>          
     </div>
 </section>
+      <modal-dialog show='myData.modalShown' width='310px' dialog-title='Testing setFoo' on-close='logClose()'>
+        <p>This is a test to show a new dialog using the same controller! {{myData.foo}}</p>
+        <button ng-click='setFoo()'>setFoo</button>
+      </modal-dialog>
+      <button ng-click='toggleModal()'>Toggle Test</button>
+    </div>
       </div>
     </div>
   </div>
