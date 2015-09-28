@@ -22,8 +22,17 @@ function Main ($scope) {
 	$scope.logClose = function() {
 		console.log('close!');
 	};
-	$scope.toggleModal = function() {
-		$scope.myData.modalShown = !$scope.myData.modalShown;
+	$scope.toggleTech = function() {
+		$scope.myData.techShown = !$scope.myData.techShown;
+	};
+	$scope.toggleArtist = function() {
+		$scope.myData.artistShown = !$scope.myData.artistShown;
+	};
+	$scope.toggleGamer = function() {
+		$scope.myData.gamerShown = !$scope.myData.gamerShown;
+	};
+	$scope.toggleWriter = function() {
+		$scope.myData.writerShown = !$scope.myData.writerShown;
 	};
 	$scope.setFoo = function () {
 		$scope.myData.foo = $scope.myData.hello
