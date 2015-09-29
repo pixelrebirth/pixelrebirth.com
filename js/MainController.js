@@ -22,6 +22,8 @@ function Main ($scope) {
 	$scope.logClose = function() {
 		console.log('close!');
 	};
+	
+	// Modal functions
 	$scope.toggleTech = function() {
 		$scope.myData.techShown = !$scope.myData.techShown;
 	};
@@ -33,14 +35,26 @@ function Main ($scope) {
 	};
 	$scope.toggleWriter = function() {
 		$scope.myData.writerShown = !$scope.myData.writerShown;
+	};	
+	$scope.toggleAuto = function() {
+		$scope.myData.autoShown = !$scope.myData.autoShown;
 	};
-	$scope.setFoo = function () {
-		$scope.myData.foo = $scope.myData.hello
+	$scope.toggleResponsive = function() {
+		$scope.myData.responsiveShown = !$scope.myData.responsiveShown;
 	};
-	$scope.myData = {
-            link: "http://google.com",
-            modalShown: false,
-            hello: 'world',
-            foo: 'bar'
+	$scope.toggleOps = function() {
+		$scope.myData.opsShown = !$scope.myData.opsShown;
 	};
+	$scope.toggleStill = function() {
+		$scope.myData.stillShown = !$scope.myData.stillShown;
+	};
+	$scope.togglePosters = function() {
+		$scope.myData.postersShown = !$scope.myData.postersShown;
+	};
+	$scope.toggleBooks = function() {
+		$scope.myData.booksShown = !$scope.myData.booksShown;
+	};
+
+	$scope.myData = {modalShown: false}
+      
 };

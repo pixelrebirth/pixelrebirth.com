@@ -14,8 +14,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #CC0000;
-  opacity: 0.2;
+  background-color: #000000;
+  opacity: 0.85;
 }
 .ng-modal-dialog {
   z-index: 10000;

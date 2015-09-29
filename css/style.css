@@ -11,6 +11,7 @@
 =========================================================*/
 body {
   overflow-x: hidden;
+  overflow-y: scroll;
   font: 400 14px/24px 'Quattrocento Sans', sans-serif;
   color: #ffffff;
   background: #0a0a0a;
@@ -178,16 +179,17 @@ h4 {
 /* ======= Buttons ======= */
 .btn-default {
   display: inline-block;
-  font: 400 12px/38px 'Quattrocento Sans', sans-serif;
+  font: 400 18px/38px 'Quattrocento Sans', sans-serif;
   color: #ffffff;
-  border: solid 3px #ffffff;
+  background: #2c2b2a;
+  opacity: .8;
+  border: solid 2px #ffffff;
   position: relative;
   padding: 0px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   z-index: 5;
   width: 150px;
-  text-transform: uppercase;
 }
 .btn-default:after {
   content: "";
@@ -203,6 +205,7 @@ h4 {
 }
 .btn-default:hover {
   color: #0a0a0a;
+  opacity: 1;
 }
 .btn-default:hover:after {
   content: "";
